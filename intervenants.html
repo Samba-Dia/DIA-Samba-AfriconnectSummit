@@ -4,12 +4,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact AfriconnectSummit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Space+Grotesk:wght@500;700&display=swap" 
+    rel="stylesheet">
+    <!-- Font Awesome (pour les icônes) -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<header class="header">
+    <nav class="navbar">
+        <a href="index.html" class="logo">Africonnect Summit</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="programme.html">Programme</a></li>
+            <li><a href="intervenants.html">Intervenants</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button id="theme-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+</header>
 
+<main>
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Nos Intervenants</h1>
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li aria-current="page">Intervenants</li>
+                </ul>
+            </nav>
+            <p class="banner-description">
+                Découvrez les experts africains qui partageront leur expérience lors d'AfriConnect Summit 2026.
+            </p>
+        </div>
+    </section>
+    <section class="speaker-filter">
+        <h2>Filtrer par thématique</h2>
+        <div class="filter-buttons" role="group" aria-label="Filtres des intervenants">
+            <button  class="filter-btn active" data-filter="all" aria-pressed="true">Tous</button>
+            <button class="filter-btn" data-filter="ia" aria-pressed="false">IA & Tech</button>
+            <button class="filter-btn" data-filter="business" aria-pressed="false">Business</button>
+            <button class="filter-btn" data-filter="design" aria-pressed="false">Design</button>
+            <button class="filter-btn" data-filter="data" aria-pressed="false">Data</button>
+        </div>
+    </section>
+    <section>
+        <article class="speaker-card" data-category="ia">
+            <div class="speaker-img-container">
+                <img src="images/Mouhamed Faye.jpeg" alt="Mouhamed Faye">
+            </div>
+            <div class="speaker-info">
+                <h3>Mouhamed Faye</h3>
+                <p class="speaker-role">Expert IA</p>
+                <div>
+                    <i class="fa-solid fa-earth-africa"></i>
+                    <span>Sénégal</span>
+                </div>
+            </div>
+        </article>
+         <article class="speaker-card" data-category="design">
+            <div class="speaker-img-container">
+                <img src="images/Amina Diallo.jpeg" alt="Amina Diallo">
+            </div>
+            <div class="speaker-info">
+                <h3>Amina Diallo</h3>
+                <p class="speaker-role">UX Designer</p>
+                <div>
+                    <i class="fa-solid fa-earth-africa"></i>
+                    <span>Mali</span>
+                </div>
+            </div>
+        </article>
+         <article class="speaker-card" data-category="business">
+            <div class="speaker-img-container">
+                <img src="images/Samuel Okoro.jpeg" alt="Samuel Okoro">
+            </div>
+            <div class="speaker-info">
+                <h3>Samuel Okoro</h3>
+                <p class="speaker-role">Entrepreneur Tech</p>
+                <div>
+                    <i class="fa-solid fa-earth-africa"></i>
+                    <span>Nigeria</span>
+                </div>
+            </div>
+        </article>
+         <article class="speaker-card" data-category="ia">
+            <div class="speaker-img-container">
+                <img src="images/John Mensah.jpeg" alt="John Mensah">
+            </div>
+            <div class="speaker-info">
+                <h3>John Mensah</h3>
+                <p class="speaker-role">Cloud Engineer</p>
+                <div>
+                    <i class="fa-solid fa-earth-africa"></i>
+                    <span>Ghana</span>
+                </div>
+            </div>
+        </article>
+         <article class="speaker-card" data-category="data">
+            <div class="speaker-img-container">
+                <img src="images/Grace Fofana.jpeg" alt="Grace Fofana">
+            </div>
+            <div class="speaker-info">
+                <h3>Grace Fofana</h3>
+                <p class="speaker-role">Spécialiste Cybersécurité</p>
+                <div>
+                    <i class="fa-solid fa-earth-africa"></i>
+                    <span>Cote d'Ivoire</span>
+                </div>
+            </div>
+        </article>
+        <article class="speaker-card" data-category="business">
+            <div class="speaker-img-container">
+                <img src="images/Patrice Ndzi.jpeg" alt="Patrice Ndzi">
+            </div>
+            <div class="speaker-info">
+                <h3>Patrice Ndzi</h3>
+                <p class="speaker-role">Invstisseur</p>
+                <div>
+                    <i class="fa-solid fa-earth-africa"></i>
+                    <span>Cameroun</span>
+                </div>
+            </div>
+        </article>
+         <article class="speaker-card" data-category="design">
+            <div class="speaker-img-container">
+                <img src="images/Fatou ndiaye.jpeg" alt="Fatou Ndiaye">
+            </div>
+            <div class="speaker-info">
+                <h3>Fatou Ndiaye</h3>
+                <p class="speaker-role">Designer</p>
+                <div>
+                    <i class="fa-solid fa-earth-africa"></i>
+                    <span>Sénégal</span>
+                </div>
+            </div>
+        </article>
+         <article class="speaker-card" data-category="data">
+            <div class="speaker-img-container">
+                <img src="images/Zouldane.jpeg" alt="Zouldane">
+            </div>
+            <div class="speaker-info">
+                <h3>Mouhamed Zouldane</h3>
+                <p class="speaker-role">Data Engineer</p>
+                <div>
+                    <i class="fa-solid fa-earth-africa"></i>
+                    <span>Maroc</span>
+                </div>
+            </div>
+        </article>
+         <article class="speaker-card" data-category="ia">
+            <div class="speaker-img-container">
+                <img src="images/Esther Njeri.jpeg" alt="Esther Njeri">
+            </div>
+            <div class="speaker-info">
+                <h3>Esther Njeri</h3>
+                <p class="speaker-role">Data Scientist</p>
+                <div>
+                    <i class="fa-solid fa-earth-africa"></i>
+                    <span>Benin</span>
+                </div>
+            </div>
+        </article>
+    </section>
+</main>
 
-
+<footer>
+    <div  class="footer-container">
+        <div>
+            <h3>Africonnect Summit</h3>
+            <p>
+                La conférence incontournable de l'innovation africaine.
+            </p>
+        </div>
+        <div>
+            <h3>Navigations</h3>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Suivez-nous</h3>
+            <a href="#"><i  class="fab fa-instagram"></i></a>
+            <a href="#"><i  class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+    <p class="copyright">
+       &copy;<span id="year"></span>Africonnect Summit. Tous droits réservés.
+    </p>
+</footer>
+<button id="topBtn">
+        <i class="fa-solid fa-arrow-up"></i>
+</button>
 
 
  <script src="js/main.js"></script>

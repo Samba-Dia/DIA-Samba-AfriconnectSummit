@@ -5,12 +5,222 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact AfriconnectSummit</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Space+Grotesk:wght@500;700&display=swap" 
+    rel="stylesheet">
+    <!-- Font Awesome (pour les icônes) -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- CSS -->
 </head>
 <body>
+<header class="header">
+    <nav class="navbar">
+        <a href="index.html" class="logo">Africonnect Summit</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="programme.html">Programme</a></li>
+            <li><a href="intervenants.html">Intervenants</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button id="theme-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+</header>
 
+<main>
+    <section  class="page-banner">
+        <div class="banner-content">
+            <h1>Inscription & Contact</h1>
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li  aria-current="page">Contact</li>
+                </ul>
+            </nav>
+            <p  class="banner-description">
+                Inscrivez-vous à Africonnect Summit 2026 et contactez nous.
+            </p>
+        </div>
+    </section>
+    <section class="contact-section">
+        <div class="contact-container">
+            <article class="contact-form">
+                <h2>Formulaire d'inscription</h2>
+                <form  id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="nom">Nom complet</label>
+                        <input type="text">
+                        <span class="error-message" aria-live="polite"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="">email</label>
+                        <input type="email" id="email" name="email" required placeholder="Ex: contact@domaine.com">
+                        <span class="error-message" aria-live="polite"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Téléphone</label>
+                        <input type="tel" id="telephone" name="telephone" required placeholder="Ex: 771234567>
+                        <span class="error-message" aria-live="polite"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="participation">Type de participation</label>
+                        <select  id="participation" name="participation">
+                            <option value="participant">Participant</option>
+                            <option value="intervenant">Intervenant</option>
+                            <option value="sponsor">Sponsor</option>
+                            <option value="presse">Presse</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="pays">Pays</label>
+                        <select  id="pays" name="pays">
+                            <option value="senegal">Sénégal</option>
+                            <option value="cote-divoire">Cote-d'Ivoire</option>
+                            <option value="mali">Mali</option>
+                            <option value="ghana">Ghana</option>
+                            <option value="nigeria">Nigéria</option>
+                            <option value="benin">Benin</option>
+                            <option value="togo">Togo</option>
+                            <option value="cameroun">Cameroun</option>
+                            <option value="maroc">Maroc</option>
+                            <option value="tunisie">Tunisie</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Motivation</label>
+                        <textarea id="message" name="message" rows="6" placeholder=
+                        "Expliquez vos motivations pour participer au sommet..." required></textarea>
+                        <span class="error-message" aria-live="polite"></span>
+                    </div>
+                    <div id="form-success" class="success-message" hidden></div>
+                    <button type="submit" class="submit-btn">Envoyer</button>
+                </form>
+            </article>
+            <aside class="contact-info">
+                <h2></h2>
+                <div class="info-item">
+                    <strong>Lieu :</strong>
+                    <p>CICAD - Dakar, Sénégal</p>
+                </div>
+                <div class="info-item">
+                    <strong>Email</strong>
+                    <p>contact@africonnectsummit.com</p>
+                </div>
+                <div class="info-item">
+                    <strong>Téléphone</strong>
+                    <p>+221 77 123 45 67</p>
+                </div>
+                <div class="info-item">
+                    <strong>Horaires :</strong>
+                    <p>09h00 - 18h00</p>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <section class="faq-section">
+        <h2>Questions fréquentes</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <input type="checkbox" id="faq-1" class="accordion-toggle">
+                <label for="faq-1" class="accordion-title">Comment s'inscrire ?</label>
+                <div class="accordion-content">
+                    <p>
+                        Remplissez simplement le formulaire ci-dessus en indiquant vos motivations.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <input type="checkbox" id="faq-2" class="accordion-toggle">
+                <label for="faq-2" class="accordion-title">L'événement est-il payant ?</label>
+                <div class="accordion-content">
+                    <p>
+                        L'accès de base est gratuit pour les étudiants sous réserve de validation de leur formulaire.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <input type="checkbox" id="faq-3" class="accordion-toggle">
+                <label  for="faq-3" class="accordion-title">Recevrai-je un certificat ?</label>
+                <div class="accordion-content">
+                    <p>
+                        Oui, une attestation officielle de présence nominative vous sera envoyée par email 
+                        après le sommet.
+                    </p>
+                </div>
+                <div class="accordion-item">
+                <input type="checkbox" id="faq-4" class="accordion-toggle">
+                <label  for="faq-4" class="accordion-title">Les repas sont-ils inclus ?</label>
+                <div class="accordion-content">
+                    <p>
+                        Les pauses déjeuner de l'après-midi sont 
+                        offerts à tous les inscrits.
+                    </p>
+                </div>
+                <div class="accordion-item">
+                <input type="checkbox" id="faq-5" class="accordion-toggle">
+                <label  for="faq-4" class="accordion-title">Puis-je devenir sponsor ?</label>
+                <div class="accordion-content">
+                    <p>
+                        Absolument, veuillez sélectionner l'option "Sponsor" dans la liste déroulante du formulaire.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map-section">
+        <h2>Nous trouvez</h2>
+        <div class="map-container">
+        <iframe 
+            src="https://www.eventseye.com/maps/map-senepack-26260-10502-0.html"
+            width="100%"
+            height="450"
+            style="border:0;" 
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localisation du CICAD Dakar">
+        </iframe>
+        </div>
+    </section>
+</main>
 
-
-
+<footer>
+    <div  class="footer-container">
+        <div>
+            <h3>Africonnect Summit</h3>
+            <p>
+                La conférence incontournable de l'innovation africaine.
+            </p>
+        </div>
+        <div>
+            <h3>Navigations</h3>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Suivez-nous</h3>
+            <a href="#"><i  class="fab fa-instagram"></i></a>
+            <a href="#"><i  class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+    <p class="copyright">
+       &copy;<span id="year"></span>Africonnect Summit. Tous droits réservés.
+    </p>
+</footer>
+<button id="topBtn">
+        <i class="fa-solid fa-arrow-up"></i>
+</button>
 
  <script src="js/main.js"></script>
 </body>

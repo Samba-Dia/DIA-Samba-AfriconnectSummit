@@ -4,13 +4,262 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact AfriconnectSummit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Space+Grotesk:wght@500;700&display=swap" 
+    rel="stylesheet">
+    <!-- Font Awesome (pour les icônes) -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<header class="header">
+    <nav class="navbar">
+        <a href="index.html" class="logo">Africonnect Summit</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="programme.html">Programme</a></li>
+            <li><a href="intervenants.html">Intervenants</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button id="theme-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+</header>
 
+<main>
+    <section  class="page-banner">
+        <div class="banner-content">
+            <h1>Programme du Sommet</h1>
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li  aria-current="page">Programme</li>
+                </ul>
+            </nav>
+            <p class="banner-description">
+                Découvrez les conférences, atelierset activités prévues 
+                pendant les trois jours d'Africonnect Summit 2026.
+            </p>
+        </div>
+    </section>
 
+    <section class="programme-tabs">
+        <h2>Planning de l'événement</h2>
+        <div class="tab-buttons" role="tablist" aria-label="Jours du programme">
+            <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="jour1" id="tab-j1">
+                Jour 1
+            </button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="jour2" id="tab-j2">
+                Jour 2
+            </button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="jour3" id="tab-j3">
+                Jour 3
+            </button>
+        </div>
+        <article class="tab-content active" id="jour1" role="tabpanel" aria-labelledby="tab-j1">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><i class="table-container">Heure</i></th>
+                            <th>Session</th>
+                            <th>Intervenant</th>
+                            <th>Salle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="time-slot">09h00</td>
+                            <td class="session-name">Ouverture</td>
+                            <td>Mouhamed Faye</td>
+                            <td>Amphithéatre</td>
+                        </tr>
+                        <tr>
+                            <td class="time-slot">10h00</td>
+                            <td class="session-name">Intelligence Artificielle</td>
+                            <td> Amina Diallo</td>
+                            <td>Salle 1</td>
+                        </tr>
+                        <tr>
+                            <td class="time-slot">12h30</td>
+                            <td class="session-name">Pause Déjeuner</td>
+                            <td>-</td>
+                            <td>Restaurant</td>
+                        </tr>
+                        <tr>
+                            <td class="time-slot">14h00</td>
+                            <td class="session-name">Développement Web</td>
+                            <td>John Mensah</td>
+                            <td>Salle 2</td>
+                        </tr>
+                        <tr>
+                            <td class="time-slot">16h00</td>
+                            <td class="session-name">Questions / Réponses</td>
+                            <td>Tout ls intervenants</td>
+                            <td>Amphithéatre</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+        <article class="tab-content" id="jour2" role="tabpanel" aria-labelledby="tab-j2" hidden>
+             <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><i class="table-container">Heure</i></th>
+                            <th>Session</th>
+                            <th>Intervenant</th>
+                            <th>Salle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="time-slot">09h00</td>
+                            <td class="session-name">Créer une Startup</td>
+                            <td>Samuel Okoro</td>
+                            <td>Salle 3</td>
+                        </tr>
+                        <tr>
+                            <td class="time-slot">10h00</td>
+                            <td class="session-name">Fintech Africa</td>
+                            <td>Grace Fofana</td>
+                            <td>Salle 1</td>
+                        </tr>
+                         <tr>
+                            <td class="time-slot">12h30</td>
+                            <td class="session-name">Pause Déjeuner</td>
+                            <td>-</td>
+                            <td>Restaurant</td>
+                        </tr>
+                        <tr>
+                            <td class="time-slot">14h00</td>
+                            <td class="session-name">Cybersecurité</td>
+                            <td>John Mensah</td>
+                            <td>Salle 2</td>
+                        </tr>
+                        <tr>
+                            <td class="time-slot">16h00</td>
+                            <td class="session-name">Networking</td>
+                            <td>Tous les participans</td>
+                            <td>Hall Principal</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+        <article class="tab-content" id="jour3" role="tabpanel" aria-labelledby="tab-j3" hidden>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><i class="table-container">Heure</i></th>
+                            <th>Session</th>
+                            <th>Intervenant</th>
+                            <th>Salle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="time-slot">09h00</td>
+                            <td class="session-name">Cloud computing</td>
+                            <td>Mouhamed Faye</td>
+                            <td>Salle 2</td>
+                        </tr>
+                        <tr>
+                            <td class="time-slot">10h00</td>
+                            <td class="session-name">Carrière Tech</td>
+                            <td>Amina Diallo</td>
+                            <td>Salle 1</td>
+                        </tr>
+                         <tr>
+                            <td class="time-slot">12h30</td>
+                            <td class="session-name">Pause Déjeuner</td>
+                            <td>-</td>
+                            <td>Restaurant</td>
+                        </tr>
+                        <tr>
+                            <td class="time-slot">14h00</td>
+                            <td class="session-name">Présentation des Startup</td>
+                            <td>Samuel Okoro</td>
+                            <td>Salle 2</td>
+                        </tr>
+                        <tr>
+                            <td class="time-slot">16h00</td>
+                            <td class="session-name">Cérémonie de cloture</td>
+                            <td>Organisation</td>
+                            <td>>Amphithéatre</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </section>
+    <section class="themes">
+        <h2>Les grandes thématiques</h2>
+        <div class="theme-grid">
+            <article class="theme-card scroll-trigger">
+                <div  class="theme-icon"><i class="fa-solid fa-robot"></i></div>
+                <h3>Intelligence Artificielle</h3>
+                <p>Explorer les innovations qui transforment l'afrique.</p>
+            </article>
+            <article class="theme-card scroll-trigger">
+                <div  class="theme-icon"><i i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Cybersecurité</h3>
+                <p>Sécuriser les systèmes et protéger les données.</p>
+            </article>
+            <article class="theme-card scroll-trigger">
+                <div  class="theme-icon"><i class="fa-solid fa-cloud"></i></div>
+                <h3>Cloud Computing</h3>
+                <p>Découvrir les technologies cloud modernes.</p>
+            </article>
+            <article class="theme-card scroll-trigger">
+                <div  class="theme-icon"><i  class="fa-solid fa-chart-line"></i></div>
+                <h3>Entrepreneuriat</h3>
+                <p>Créer et développer des startups innovantes.</p>
+            </article>
+        </div>
+    </section>
+</main>
 
-
+<footer>
+    <div  class="footer-container">
+        <div>
+            <h3>Africonnect Summit</h3>
+            <p>
+                La conférence incontournable de l'innovation africaine.
+            </p>
+        </div>
+        <div>
+            <h3>Navigations</h3>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Suivez-nous</h3>
+            <a href="#"><i  class="fab fa-instagram"></i></a>
+            <a href="#"><i  class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+    <p class="copyright">
+       &copy;<span id="year"></span>Africonnect Summit. Tous droits réservés.
+    </p>
+</footer>
+<button id="topBtn">
+        <i class="fa-solid fa-arrow-up"></i>
+</button>
 
  <script src="js/main.js"></script>
 </body>

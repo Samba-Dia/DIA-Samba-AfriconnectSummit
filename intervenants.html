@@ -28,12 +28,15 @@
             <button id="theme-btn">
                 <i class="fa-solid fa-moon"></i>
             </button>
+             <button id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </nav>
 </header>
 
 <main>
-    <section class="page-banner">
+    <section class="page-banner hidden fade-in">
         <div class="banner-content">
             <h1>Nos Intervenants</h1>
             <nav class="breadcrumb" aria-label="Fil d'Ariane">
@@ -47,7 +50,7 @@
             </p>
         </div>
     </section>
-    <section class="speaker-filter">
+    <section class="speaker-filter hidden slide-in">
         <h2>Filtrer par thématique</h2>
         <div class="filter-buttons" role="group" aria-label="Filtres des intervenants">
             <button  class="filter-btn active" data-filter="all" aria-pressed="true">Tous</button>
@@ -57,7 +60,7 @@
             <button class="filter-btn" data-filter="data" aria-pressed="false">Data</button>
         </div>
     </section>
-    <section class="speakers-container">
+    <section class="speakers-container hidden zoom-in">
         <article class="speaker-card" data-category="ia">
             <div class="speaker-img-container">
                 <img src="images/Mouhamed Faye.jpeg" alt="Mouhamed Faye">

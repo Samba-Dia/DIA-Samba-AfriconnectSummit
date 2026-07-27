@@ -28,12 +28,15 @@
             <button id="theme-btn">
                 <i class="fa-solid fa-moon"></i>
             </button>
+             <button id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </nav>
 </header>
 
 <main>
-    <section  class="page-banner">
+    <section  class="page-banner hidden fade-in">
         <div class="banner-content">
             <h1>Programme du Sommet</h1>
             <nav class="breadcrumb" aria-label="Fil d'Ariane">
@@ -49,7 +52,7 @@
         </div>
     </section>
 
-    <section class="programme-tabs">
+    <section class="programme-tabs hidden zoom-in">
         <h2>Planning de l'événement</h2>
         <div class="tab-buttons" role="tablist" aria-label="Jours du programme">
             <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="jour1" id="tab-j1">
@@ -201,7 +204,7 @@
             </div>
         </article>
     </section>
-    <section class="themes">
+    <section class="themes hidden fade-in">
         <h2>Les grandes thématiques</h2>
         <div class="theme-grid">
             <article class="theme-card scroll-trigger">

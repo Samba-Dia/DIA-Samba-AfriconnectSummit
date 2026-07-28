@@ -266,3 +266,13 @@ if (days && hours && minutes && seconds) {
     // Mise à jour automatique chaque seconde
     const timer = setInterval(updateCountdown, 1000);
 }
+
+// Année dynamique dans le footer
+
+// Récupère l'élément qui affiche l'année
+const year = document.getElementById("year");
+
+// Vérifie que l'élément existe avant de modifier son contenu
+if (year) {
+    year.textContent = new Date().getFullYear();
+}
